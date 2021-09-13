@@ -1,5 +1,8 @@
 [Unit]
-Description=FRP Client Service (%i)
+Description=Odoo Server
+Requires=postgresql.service
+After=network.target postgresql.service
+
 After=network.target
 StartLimitIntervalSec=0
 
